@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Post Office Pincode Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Indian Post Office Pincode Checker</h1>
+    </header>
+    <main>
+        <section class="main-box">
+            <section class="pincode-checker">
+                <h2>Check Pincode</h2>
+                <form id="pincodeForm">
+                    <label for="pincode">Enter Pincode:</label>
+                    <input type="text" id="pincode" name="pincode" placeholder="600001"  title="Please enter a valid 6-digit pincode">
+                    <button type="submit">Check</button>
+                </form>
+                
+                    
+                </div>
+            </section>
+
+            <section class="result-display">
+                <h2>Post Office Details</h2>
+                <div class="filter-section">
+                    <label for="filter"> Filter by Post Office Name</label>
+                    <input type="text" id="filter" placeholder="Type to filter..." >
+                    <div class="count" id="count"></div>
+                </div>  
+                <div class="status-message" id="statusMessage"></div>
+
+                <div id="result">
+                    <div class="post-office">
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Post Office Pincode Checker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

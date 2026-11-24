@@ -1,0 +1,240 @@
+html, body{
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    background-color:cadetblue;
+    font-size:clamp(12px, 2vw, 20px);
+    font-weight:bold;
+    color:white;
+    padding:15px;
+}
+
+.main-box{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+    margin:20px;
+}
+
+.pincode-checker{
+    display:flex;
+    flex-direction:column;
+    flex: 1;
+    border:1px solid black;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px black;
+    padding:20px;
+   
+
+}
+
+.pincode-checker h2{
+    text-align:center;
+    color:rgb(7, 26, 134);
+    margin-bottom:20px;
+}
+
+.pincode-checker form{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+
+.pincode-checker label{
+    font-weight:bold;
+    align-self:center;
+    color:rgb(80, 83, 105);
+}
+
+.pincode-checker input{
+    padding:4px;
+    border-radius:5px;
+    border:1px solid rgb(80, 83, 105);
+}
+
+.pincode-checker button{
+    background-color:cadetblue;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.pincode-checker button:hover{
+    background-color:rgb(7, 26, 134);
+    box-shadow: 0px 0px 10px rgb(107, 107, 209);
+}
+
+.result-display{
+    display:flex;
+    flex-direction:column;
+    flex: 1;
+    border:1px solid black;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px black;
+    padding:20px;
+    max-height:400px;
+    overflow-y:auto;
+    box-sizing:border-box;
+
+
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    background-color:cadetblue;
+    font-size:clamp(12px, 2vw, 14px);
+    font-weight:bold;
+    color:white;
+    padding:6px;
+}
+
+.result-display {
+    width: 100%;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.result-display h2 {
+    margin: 0 0 20px;
+    color: #1e293b;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Filter section */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.filter-section input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filter-section input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.count {
+    color: #64748b;
+    font-size: 13px;
+    text-align: right;
+}
+
+/* Status message */
+.status-message {
+    margin: 15px 0;
+    color: #2563eb;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Results container */
+#result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-height: 450px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+/* Individual post office card */
+.post-office {
+    padding: 18px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-office:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post-office h3 {
+    margin: 0 0 12px;
+    color: #1d4ed8;
+    font-size: 17px;
+}
+
+.post-office p {
+    margin: 7px 0;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.post-office strong {
+    color: #1e293b;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .result-display {
+        padding: 16px;
+        margin: 20px auto;
+    }
+
+    .result-display h2 {
+        font-size: 20px;
+    }
+
+    #result {
+        grid-template-columns: 1fr;
+        max-height: 400px;
+    }
+}
