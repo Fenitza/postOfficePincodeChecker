@@ -30,6 +30,7 @@ async function pincodeChecker(event) {
     statusMessage.textContent = 'Checking pincode...';
     resultDiv.innerHTML = '';
     countDiv.textContent = '';
+    console.clear();
   
     try{
         const response = await fetch(`https://api.postalpincode.in/pincode/${pincodeValidation.test(pincode) ? pincode : ''}`);
