@@ -22,7 +22,9 @@ async function pincodeChecker(event) {
     const pincode = document.querySelector('#pincode').value;
     const pincodeValidation = /^\d{6}$/;
     if(!pincodeValidation.test(pincode)){
-        statusMessage.textContent = 'Please enter a valid 6-digit pincode.';    
+        statusMessage.textContent = 'Please enter a valid 6-digit pincode.';
+        resultDiv.innerHTML = '';
+        countDiv.textContent = '';
         return;
     }
     statusMessage.textContent = 'Checking pincode...';
